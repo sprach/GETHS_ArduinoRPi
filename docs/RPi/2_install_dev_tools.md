@@ -1,7 +1,7 @@
 # 개발 도구
   ## 개발 관련 파일 설치
   0. Python 2.7 제거 (Optional)
-     * Python 2.7과 3.x대 버전을 같이 둔 경우 호출의 문제가 발생할 수 있으므로 가급적 2.7 버전은 제거하는 것이 나음
+     * (판단 필요) Python 3.x 만을 사용할 경우 Python 2.7 제거
        <pre><code>$ sudo apt-get remove -y python2.7
        $ sudo apt-get autoremove -y</code></pre>
 
