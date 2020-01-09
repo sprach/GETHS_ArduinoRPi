@@ -10,7 +10,7 @@
        ssid="&lt;ssid-name&gt;"
        psk="&lt;password&gt;"
      }</code></pre>
-  3. USB Serial 접속을 위한 Serial 활성화 Key 삽입
+  3. config.txt: USB Serial 접속을 위한 Serial 활성화 Key 삽입
      <pre><code>...
      enable_uart=1</code></pre>
 
