@@ -2,44 +2,9 @@
 > 라즈베리파이에 모니터(HDMI)를 연결할 수 없을 때의 작업
 
 ## 모니터 대체 방법
-1. USB Serial 이용
-   > 예시의 USB Serial 디바이스는 <i><b>PL2303HX</b></i>이며, 다른 USB Serial 디바이스는 그에 맞는 드라이버를 다운로드 받아서 별도 설치해야 한다.
-   * [Windows 10용 USB Serial device(PL2303HX) 드라이버 설치](./210_install-Win10-Serial(PL2303HX).md)
-   * [Windows 8 이하용 USB Serial device(PL2303HX) 드라이버 설치](./220_install-Win8-Serial(PL2303HX).md)
-   * [MacOS용 USB Serial device(PL2303HX) 드라이버 설치](./230_install-Mac-Serial(PL2303HX).md)
-
-2. Windows 10 Hotspot 이용
-
-3. 모바일 Hotspot 이용
-
-   1. 메모장 등의 편집기를 이용하여 MicroSD의 boot 에 있는 <i><b>config.txt</b></i> 파일을 연다.
-   2. 아래 내용이 없는 경우 추가하여 저장한다.
-      <pre><code>enable_uart=1</code></pre>
-   3. MicroSD를 라즈베리파이에 삽입한다.
-   4. USB Serial 디바이스의 핀을 라즈베리파이의 핀에 연결한다.
-      > *주의*) 작업시 전원은 반드시 Off로!
-
-      | USB Serial | RasPi Pin No |
-      |:----------:|:------------:|
-      | GND        | 6 (GND)      |
-      | Rx         | 8 (Tx)       |
-      | Tx         | 10 (Rx)      |
-      ![USB Serial과 라즈베리파이 핀 연결도](../images/RPi/pins-usbserial-raspi.jpg)
-   5. USB Serial 디바이스를 PC의 USB 포트에 연결한다.
-   4. 라즈베리파이 전원을 연결하여 부팅한다.
-
-## Hotspot을 이용하는 경우
-   1. WiFi 접속을 위한 <i><b>wpa_supplicant.conf</b></i> 파일을 MicroSD의 boot에 복사해 넣기
-   2. 접속할 WiFi AP의 <i><b>ssid</b></i>와 <i><b>비밀번호</b></i>를 입력하고 저장한다.
-      <pre><code>country=GB
-      ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-      update_config=1
-
-      network={
-         ssid="&lt;ssid-name&gt;"
-         psk="&lt;password&gt;"
-      }</code></pre>
-   3. MicroSD를 라즈베리파이에 삽입후 전원을 연결하여 부팅한다.
+1. [USB Serial 이용](./1100_setup-UsbSerial.md)
+2. [Windows 10 Hotspot 이용](./1200_setup-Win10Hotspot.md)
+3. [모바일 Hotspot 이용](./1300_setup-MobileHotspot.md)
 
 # Raspberry Pi의 IP 주소
   <pre><code> $ ifconfig</code></pre>
