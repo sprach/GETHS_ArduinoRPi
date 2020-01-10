@@ -6,7 +6,7 @@
 1. USB Serial 드라이버 설치 (PC, Mac용)
    > 테스트를 진행한 USB Serial 디바이스는 <i><b>PL2303HX</b></i>이며, 다른 USB Serial 디바이스는 그에 맞는 드라이버를 다운로드 받아서 별도 설치해야 한다.
 
-   1. Windows 10용 USB Serial 드라이버
+   1.1. Windows 10용 USB Serial 드라이버
       1. USB Serial Device를 Windows USB 포트에 삽입
       2. '시작'(윈도 심볼)을 우마우스 클릭 &gt; '장치 관리자' 선택
          1. '포트(COM && LPT)' 클릭하여 확장
