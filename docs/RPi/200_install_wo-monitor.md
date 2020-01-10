@@ -1,27 +1,16 @@
 # MicroSD 사전 설정
-> 디스플레이를 연결할 수 없을 때의 작업
+> 라즈베리파이에 모니터(HDMI)를 연결할 수 없을 때의 작업
 
-## USB Serial을 이용할 경우
+## 모니터 대체 방법
+1. USB Serial 이용
+   > 예시의 USB Serial 디바이스는 <i><b>PL2303HX</b></i>이며, 다른 USB Serial 디바이스는 그에 맞는 드라이버를 다운로드 받아서 별도 설치해야 한다.
+   * [Windows 10용 USB Serial device(PL2303HX) 드라이버 설치](./210_install-Win10-Serial(PL2303HX).md)
+   * [Windows 8 이하용 USB Serial device(PL2303HX) 드라이버 설치](./220_install-Win8-Serial(PL2303HX).md)
+   * [MacOS용 USB Serial device(PL2303HX) 드라이버 설치](./230_install-Mac-Serial(PL2303HX).md)
 
-1. USB Serial 드라이버 설치 (PC, Mac용)
-   > 테스트를 진행한 USB Serial 디바이스는 <i><b>PL2303HX</b></i>이며, 다른 USB Serial 디바이스는 그에 맞는 드라이버를 다운로드 받아서 별도 설치해야 한다.
+2. Windows 10 Hotspot 이용
 
-   1.1. Windows 10용 USB Serial 드라이버
-
-      1.1.1. USB Serial Device를 Windows USB 포트에 삽입
-      1.1.2. '시작'(윈도 심볼)을 우마우스 클릭 &gt; '장치 관리자' 선택
-         1. '포트(COM && LPT)' 클릭하여 확장
-	      2. COM Por 확인
-            * 'PL2303HXA PHASED OUT SINCE 2012. PLEASE CONTACT YOUR SUPPLIER.' 나올시 우마우스 클릭하여 '디바이스 제거' 선택
-	           1. '이 장치의 드라이버 소프트웨어를 삭제합니다.' 선택
-              2. '제거' 버튼 클릭
-		        3. 단계 2.로 가서 드라이버 프로그램 설치
-	           * 포트명 앞에 경고 아이콘이 있을 경우 드라이버 재설치 필요하며 단계 2.로 갈 것.
-
-   2. USB Serial 드라이버 이상이 있을 경우 드라이버 다운로드후 재설치
-      1. USB Serial Device를 USB 포트에서 제거
-      2. https://kitschool.tistory.com/130 에서 드라이버 다운로드 및 드라이버 프로그램 설치
-      3. 단계 1.로 이동
+3. 모바일 Hotspot 이용
 
    1. 메모장 등의 편집기를 이용하여 MicroSD의 boot 에 있는 <i><b>config.txt</b></i> 파일을 연다.
    2. 아래 내용이 없는 경우 추가하여 저장한다.
