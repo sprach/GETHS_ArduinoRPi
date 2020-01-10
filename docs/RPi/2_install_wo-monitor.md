@@ -1,19 +1,55 @@
 # MicroSD 사전 설정
 > 디스플레이를 연결할 수 없을 때의 작업
-1. ssh 사용을 위한 빈 'ssh' 파일 복사 또는 만들어 넣기
-2. WiFi 접속을 위한 'wpa_supplicant.conf' 파일 복사해 넣기
-   <pre><code>country=GB
-   ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-   update_config=1
 
-   network={
-      ssid="&lt;ssid-name&gt;"
-      psk="&lt;password&gt;"
-   }</code></pre>
-3. config.txt: USB Serial 접속을 위한 설정
-   <pre><code>...
-   enable_uart=1</code></pre>
+## USB Serial을 이용할 경우
 
+1. USB Serial 드라이버 설치 (PC, Mac용)
+   > 테스트를 진행한 USB Serial 디바이스는 <i><b>PL2303HX</b></i>이며, 다른 USB Serial 디바이스는 그에 맞는 드라이버를 다운로드 받아서 별도 설치해야 한다.
+
+   1. Windows 10용 USB Serial 드라이버
+      1. USB Serial Device를 Windows USB 포트에 삽입
+      2. '시작'(윈도 심볼)을 우마우스 클릭 &gt; '장치 관리자' 선택
+         1. '포트(COM && LPT)' 클릭하여 확장
+	      2. COM Por 확인
+            * 'PL2303HXA PHASED OUT SINCE 2012. PLEASE CONTACT YOUR SUPPLIER.' 나올시 우마우스 클릭하여 '디바이스 제거' 선택
+	           1. '이 장치의 드라이버 소프트웨어를 삭제합니다.' 선택
+              2. '제거' 버튼 클릭
+		        3. 단계 2.로 가서 드라이버 프로그램 설치
+	           * 포트명 앞에 경고 아이콘이 있을 경우 드라이버 재설치 필요하며 단계 2.로 갈 것.
+
+   2. USB Serial 드라이버 이상이 있을 경우 드라이버 다운로드후 재설치
+      1. USB Serial Device를 USB 포트에서 제거
+      2. https://kitschool.tistory.com/130 에서 드라이버 다운로드 및 드라이버 프로그램 설치
+      3. 단계 1.로 이동
+
+   1. 메모장 등의 편집기를 이용하여 MicroSD의 boot 에 있는 <i><b>config.txt</b></i> 파일을 연다.
+   2. 아래 내용이 없는 경우 추가하여 저장한다.
+      <pre><code>enable_uart=1</code></pre>
+   3. MicroSD를 라즈베리파이에 삽입한다.
+   4. USB Serial 디바이스의 핀을 라즈베리파이의 핀에 연결한다.
+      > *주의*) 작업시 전원은 반드시 Off로!
+
+      | USB Serial | RasPi Pin No |
+      |:----------:|:------------:|
+      | GND        | 6 (GND)      |
+      | Rx         | 8 (Tx)       |
+      | Tx         | 10 (Rx)      |
+      ![USB Serial과 라즈베리파이 핀 연결도](../images/RPi/pins-usbserial-raspi.jpg)
+   5. USB Serial 디바이스를 PC의 USB 포트에 연결한다.
+   4. 라즈베리파이 전원을 연결하여 부팅한다.
+
+## Hotspot을 이용하는 경우
+   1. WiFi 접속을 위한 <i><b>wpa_supplicant.conf</b></i> 파일을 MicroSD의 boot에 복사해 넣기
+   2. 접속할 WiFi AP의 <i><b>ssid</b></i>와 <i><b>비밀번호</b></i>를 입력하고 저장한다.
+      <pre><code>country=GB
+      ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+      update_config=1
+
+      network={
+         ssid="&lt;ssid-name&gt;"
+         psk="&lt;password&gt;"
+      }</code></pre>
+   3. MicroSD를 라즈베리파이에 삽입후 전원을 연결하여 부팅한다.
 
 # Raspberry Pi의 IP 주소
   <pre><code> $ ifconfig</code></pre>

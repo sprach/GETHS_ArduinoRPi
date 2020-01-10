@@ -1,5 +1,5 @@
-# 'ssh'와 'WiFi' 설정
-  1. PC와 USB Serial을 이용한 설정
+# USB Serial로 'ssh'와 'WiFi' 설정
+  1. <i><b>Tera Term</b></i>(Windows)이나 <i><b>Serial</b></i>(Mac) 등으로 <i><b></b><i>
      1. Raspberry Pi config
         <pre><code>$ sudo raspi-config</code></pre>
      2. WiFi
