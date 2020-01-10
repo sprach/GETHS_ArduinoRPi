@@ -21,7 +21,7 @@
     | Rx         | 8 (Tx)       |
     | Tx         | 10 (Rx)      |
 
-    ![USB Serial과 라즈베리파이 핀 연결도](../images/RPi/pins-usbserial-raspi.jpg)
+    ![USB Serial과 라즈베리파이 핀 연결도](../../images/RPi/pins-usbserial-raspi.jpg)
 
 5. USB Serial 디바이스를 PC의 USB 포트에 연결
 
