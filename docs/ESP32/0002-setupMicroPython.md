@@ -35,7 +35,7 @@
 
    7. 압축 파일중 'SourceCodePro-Regular.ttf'를 'C:\MicroPython' 폴더에 복사해 넣은 후 'SourceCodePro.ttf'로 파일명 변경하기
 
-   8. 'C:\MicroPython\SourceCodePro.ttf'에서 우마우스 클릭하여 '모든 사용자용으로 설치' 클릭
+   8. 'C:\MicroPython\SourceCodePro.ttf'에서 우마우스 클릭하여 '<i><b>모든 사용자용으로 설치</b></i>' 클릭
       * '모든 사용자용으로 설치'가 없는 경우 '설치'로 폰트 설치
 
    9. 'C:\MicroPython\uPyCraft.exe' 실행
