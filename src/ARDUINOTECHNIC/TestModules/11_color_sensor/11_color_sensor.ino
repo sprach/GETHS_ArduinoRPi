@@ -21,7 +21,7 @@ uint16_t _r, _g, _b, _c;
 // https://github.com/adafruit/Adafruit_TCS34725
 
 /* Initialise with specific int time and gain values */
-Adafruit_TCS34725 _tcs = Adafruit_34725(TCS34725_INTEGRATIONTIME_101MS, TCS34725_GAIN_1X);
+Adafruit_TCS34725 _tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_101MS, TCS34725_GAIN_1X);
 
 void setup(void) {
     Serial.begin(115200);

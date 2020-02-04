@@ -16,7 +16,7 @@ void setup() {
     // - [0] 인터럽트(인터럽트 번호)
     // - [1] ISR: Interrupt Service Routine
     // - [2] mode (LOW, CHANGE, RISING, FALLING, HIGH)
-    attachInterrupt(digitalPinToInterrupt(PIN_SW), sw_interrupt, RISING);
+    attachInterrupt(digitalPinToInterrupt(PIN_SW), sw_interrupt, CHANGE);
 }
 
 void loop() {
