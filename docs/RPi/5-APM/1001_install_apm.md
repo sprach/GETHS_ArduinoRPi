@@ -57,7 +57,7 @@
    1. 'phpinfo.php' 파일을 만든다.
       <pre><code>$ sudo vi /var/www/html/phpinfo.php</code></pre>
    2. 'a' 키를 눌러서 아래 스크립트를 입력한다.
-      <pre><code>&lt;? phpinfo(); ?&gt;</code></pre>
+      <pre><code>&lt;?php phpinfo(); ?&gt;</code></pre>
    3. &lt;ESC&gt; 키를 누른 뒤에 ':wq!'로 파일을 강제 저장하고 빠져 나온다.
       <pre><code>&lt;ESC&gt;:wq!</code></pre>
    4. 저장된 파일을 확인한다.
@@ -67,7 +67,7 @@
    1. PC에서 웹 브라우저를 실행한다.
    2. 주소 칸에 '&lt;라즈베리파이 IP 주소&gt;/phpinfo.php'를 입력하여 PHP 정보가 나오는지 확인한다.
    > 만약 PHP 정보가 나오지 않으면 앞서의 'phpinfo.php' 파일 내용을 아래와 같이 변경해서 저장후 다시 테스트해 본다.
-     <pre><code>&lt;?php phpinfo(); ?&gt;</code></pre>
+     <pre><code>&lt;? phpinfo(); ?&gt;</code></pre>
 
 ## 웹으로 DB 관리툴 설치 (phpmyadmin)
 
