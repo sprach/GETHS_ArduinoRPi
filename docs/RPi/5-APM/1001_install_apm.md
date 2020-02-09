@@ -60,6 +60,8 @@
       <pre><code>&lt;? phpinfo(); ?&gt;</code></pre>
    3. &lt;ESC&gt; 키를 누른 뒤에 ':wq!'로 파일을 강제 저장하고 빠져 나온다.
       <pre><code>&lt;ESC&gt;:wq!</code></pre>
+   4. 저장된 파일을 확인한다.
+      <pre><code>cat /var/www/html/phpinfo.php</code></pre>
 
 5. PHP 웹 테스트
    1. PC에서 웹 브라우저를 실행한다.
