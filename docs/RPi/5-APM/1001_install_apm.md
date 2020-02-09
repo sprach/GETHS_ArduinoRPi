@@ -76,7 +76,7 @@
 
    2. 'Configure database for phpmyadmin with dbconfig-common?'이 나오면 '&lt;Yes&;gt;'를 선택한다.
 
-   3. '<b><i><u>MySQL applcation password for phpmyadmin:</u></i></b>' 메시지가 나오면 phpmyadmin을 암호를 입력한다. (2번 입력) 입력한 암호는 절대로 잊어 버리면 안된다.<br/>테스트용인 경우에는 'P@ssw0rd'와 같이 입력한다.
+   3. '<b><i><u>MySQL applcation password for phpmyadmin:</u></i></b>' 메시지가 나오면 phpmyadmin을 암호를 입력한다. (2번 입력)<br/>입력한 암호는 절대로 잊어 버리면 안된다.<br/>테스트용인 경우에는 'P@ssw0rd'와 같이 입력한다.
 
 2. Apache Config에 'phpmyadmin' 등록하기
    1. 'apache2.conf' 파일을 연다.
