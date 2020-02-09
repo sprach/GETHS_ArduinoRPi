@@ -23,9 +23,6 @@
 1. 설치
    <pre><code>$ sudo apt-get install -y mariadb-server mariadb-client libmariadb-dev</code></pre>
 
-   * 아래 삭제
-   * 설치 진행중 <b><i><u>'root' 유저에 대한 암호 설정 입력</u></i></b> 화면이 뜬다.<br/>이 때 입력한 root 암호는 잊어버리지 말고 기억해야 한다!<br/>테스트용인 경우에는 'P@ssw0rd'와 같이 입력한다.
-
 2. 외부에서 접속할 수 있도록 /etc/mysql/my.cnf 수정
    1. MySQL Config 파일을 연다.
       <pre><code>$ sudo vi /etc/mysql/my.cnf</code></pre>
@@ -73,8 +70,13 @@
 
 1. 설치
    <pre><code>$ sudo apt-get install -y phpmyadmin</code></pre>
-   * 설치시 웹서버 선택창이 뜨면 '<b><i><u>apache2</u></i></b>'를 선택한다.
-   * 설치 중간에 관리자 암호는 앞서 입력한 'root' 암호를 입력한다.<br/>
+   
+   > 설치 도중 나오는 메시지 절차
+   1. 웹서버 선택창이 뜨면 '<b><i><u>apache2</u></i></b>'를 선택한다. (&lt;TAB&gr; 키로 이동후 &lt;Enter&gr; 키를 누름)
+
+   2. 'Configure database for phpmyadmin with dbconfig-common?'이 나오면 '&lt;Yes&;gt;'를 선택한다.
+
+   3. '<b><i><u>MySQL applcation password for phpmyadmin:</u></i></b>' 메시지가 나오면 phpmyadmin을 암호를 입력한다. (2번 입력) 입력한 암호는 절대로 잊어 버리면 안된다.<br/>테스트용인 경우에는 'P@ssw0rd'와 같이 입력한다.
 
 2. Apache Config에 'phpmyadmin' 등록하기
    1. 'apache2.conf' 파일을 연다.
