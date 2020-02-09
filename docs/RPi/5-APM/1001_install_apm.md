@@ -39,6 +39,16 @@
    <pre><code>$ mysql --version</code></pre>
    <pre><code>$ mariadb --version</code></pre>
 
+4. 동작 확인
+   1. MariaDB 연결
+      <pre><code>$ mariadb -u root</code></pre>
+
+   2. 데이터베이스 목록 보기
+      <pre><code><i>MariaDB [(none)]></i> show databases;</code></pre>
+
+   3. DB에서 빠져 나오기
+      <pre><code><i>MariaDB [(none)]></i> exit;</code></pre>
+
 ## PHP 설치
 
 1. 설치
@@ -92,4 +102,4 @@
 3. phpmyadmin 테스트
    1. PC에서 웹 브라우저를 실행한다.
    2. 주소 칸에 '&lt;라즈베리파이 IP 주소&gt;/phpmyadmin'를 입력한다.
-   3. 'Username'에는 'root'를, 'Password'에는 앞서 지정한 암호를 입력한다.
+   3. 'Username'에는 'administrator'를, 'Password'에는 앞서 지정한 암호를 입력한다.
