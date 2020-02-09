@@ -19,9 +19,9 @@
    2. PC에서 웹 브라우저 실행
    3. 웹 브라우저 주소창에 라즈베리파이 IP 주소 입력
 
-## MySQL 설치
+## MySQL 설치 (MariaDB)
 1. 설치
-   <pre><code>$ sudo apt-get install -y mysql-server mysql-client libmysqlclient-dev</code></pre>
+   <pre><code>$ sudo apt-get install -y mariadb-server mariadb-client libmariadb-dev</code></pre>
    * 설치 진행중 <b><i><u>'root' 유저에 대한 암호 설정 입력</u></i></b> 화면이 뜬다.<br/>이 때 입력한 root 암호는 잊어버리지 말고 기억해야 한다!<br/>테스트용인 경우에는 'P@ssw0rd'와 같이 입력한다.
 
 2. 외부에서 접속할 수 있도록 /etc/mysql/my.conf 수정
