@@ -81,8 +81,8 @@
 2. Apache Config에 'phpmyadmin' 등록하기
    1. 'apache2.conf' 파일을 연다.
       <pre><code>$ sudo vi /etc/apache2/apache2.conf</code></pre>
-   2. 맨 마지막으로 커서를 이동한다.
-   3. 'a' 키로 삽입 모드를 만든 뒤에 아래와 같이 입력한다.
+   2. 맨 마지막으로 커서를 이동한다. (대문자 'G' 입력)
+   3. 'A' 키를 입력하여 삽입 모드로 변경하고 &lt;Enter&gt; 키를 눌러서 다음과 같이 입력한다.
       <pre><code>Include /etc/phpmyadmin/apache.conf</code></pre>
    4. &lt;ESC&gt; 키를 누른 뒤에 ':wq!'로 파일을 강제 저장하고 빠져 나온다.
       <pre><code>&lt;ESC&gt;:wq!</code></pre>
