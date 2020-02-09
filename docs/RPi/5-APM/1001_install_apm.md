@@ -22,11 +22,13 @@
 ## MySQL 설치 (MariaDB)
 1. 설치
    <pre><code>$ sudo apt-get install -y mariadb-server mariadb-client libmariadb-dev</code></pre>
+
+   * 아래 삭제
    * 설치 진행중 <b><i><u>'root' 유저에 대한 암호 설정 입력</u></i></b> 화면이 뜬다.<br/>이 때 입력한 root 암호는 잊어버리지 말고 기억해야 한다!<br/>테스트용인 경우에는 'P@ssw0rd'와 같이 입력한다.
 
-2. 외부에서 접속할 수 있도록 /etc/mysql/my.conf 수정
+2. 외부에서 접속할 수 있도록 /etc/mysql/my.cnf 수정
    1. MySQL Config 파일을 연다.
-      <pre><code>$ sudo vi /etc/mysql/my.conf</code></pre>
+      <pre><code>$ sudo vi /etc/mysql/my.cnf</code></pre>
    2. 'bind-adress'를 찾는다.
       <pre><code>/bind-address&lt;Enter&gt;</code></pre>
    3. 'bind-address'에서 '$' 키 입력하여 커서 첫 칸으로 이동후 삽입 상태에서 '#' 입력한 뒤에 &lt;ESC&gt; 키를 누른다.
