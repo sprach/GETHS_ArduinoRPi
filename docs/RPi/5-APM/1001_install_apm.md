@@ -1,5 +1,5 @@
 # APM 설치
-  > Apache + PHP + MySQL
+  > Apache + PHP + MySQL (MariaDB)
 
 ## Apache Web Server 설치
 
