@@ -49,10 +49,22 @@
    3. DB에서 빠져 나오기
       <pre><code><i>MariaDB [(none)]></i> exit;</code></pre>
 
+5. 'root' 암호 설정
+   1. MariaDB 연결
+      <pre><code>$ mariadb -u root</code></pre>
+
+   2. 기존 'root' 삭제하고 새 'root' 추가
+      <pre><code><i>MariaDB [(none)]></i> DROP USER 'root'@'localhost';
+      <i>MariaDB [(none)]></i> CREATE USER 'root'@'localhost' IDENTIFIED BY 'P@ssw0rd';
+      <i>MariaDB [(none)]></i> GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;</code></pre>
+
+   3. DB에서 빠져 나오기
+      <pre><code><i>MariaDB [(none)]></i> exit;</code></pre>
+
 ## PHP 설치
 
 1. 설치
-   <pre><code>$ sudo apt-get install -y php php-mbstring</code></pre>
+   <pre><code>$ sudo apt-get install -y php php-mbstring php-mysql</code></pre>
 
 2. 설치 버전 확인
    <pre><code>$ php -version</code></pre>
@@ -89,6 +101,9 @@
    3. '<b><i><u>MySQL applcation password for phpmyadmin:</u></i></b>' 메시지가 나오면 phpmyadmin을 암호를 입력한다. (2번 입력)<br/>입력한 암호는 절대로 잊어 버리면 안된다.<br/>테스트용인 경우에는 'P@ssw0rd'와 같이 입력한다.
 
 2. Apache Config에 'phpmyadmin' 등록하기
+   1. 'mysqli' 확장 활성화
+      <pre><code>$ sudo phpenmod mysqli
+      $ sudo /etc/init.d/apache2 restart</code></pre>
    1. 'apache2.conf' 파일을 연다.
       <pre><code>$ sudo vi /etc/apache2/apache2.conf</code></pre>
    2. 맨 마지막으로 커서를 이동한다. (대문자 'G' 입력)
