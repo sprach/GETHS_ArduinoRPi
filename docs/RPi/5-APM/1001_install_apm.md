@@ -47,7 +47,7 @@
       <pre><code><i>MariaDB [(none)]></i> show databases;</code></pre>
 
    3. DB에서 빠져 나오기
-      <pre><code><i>MariaDB [(none)]></i> exit;</code></pre>
+      <pre><code><i>MariaDB [(none)]></i> exit</code></pre>
 
 5. 'root' 암호 설정
    1. MariaDB 연결
@@ -60,7 +60,15 @@
       <i>MariaDB [(none)]></i> GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;</code></pre>
 
    3. DB에서 빠져 나오기
-      <pre><code><i>MariaDB [(none)]></i> exit;</code></pre>
+      <pre><code><i>MariaDB [(none)]></i> exit</code></pre>
+
+6. MariaDB에 새 root로 접속하기
+   1. MariaDB 연결
+      <pre><code>$ sudo mariadb -u root -p
+      <i>Enter password:</i> &lt;앞서 입력한 암호&gt;</code></pre>
+
+   2. DB에서 빠져 나오기
+      <pre><code><i>MariaDB [(none)]></i> exit&lt</code></pre>
 
 ## PHP 설치
 
