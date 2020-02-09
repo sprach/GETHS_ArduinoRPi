@@ -31,13 +31,16 @@
       <pre><code>$ sudo vi /etc/mysql/my.cnf</code></pre>
    2. 'bind-adress'를 찾는다.
       <pre><code>/bind-address&lt;Enter&gt;</code></pre>
-   3. 'bind-address'에서 '$' 키 입력하여 커서 첫 칸으로 이동후 삽입 상태에서 '#' 입력한 뒤에 &lt;ESC&gt; 키를 누른다.
+   3. 'bind-adress'가 없으면 다음 절차는 진행하지 않는다. 'bind-adress'가 있는 경우에만 다음 절차인 4.로 이동한다.
+   4. 'bind-address'에서 '$' 키 입력하여 커서 첫 칸으로 이동후 삽입 상태에서 '#' 입력한 뒤에 &lt;ESC&gt; 키를 누른다.
       <pre><code>#bind-address = 127.0.0.1</code></pre>
-   4. ':wq!'로 파일을 강제 저장하고 빠져 나온다.
+   5. ':wq!'로 파일을 강제 저장하고 빠져 나온다.
       <pre><code>:wq!</code></pre>
 
 3. 설치 확인
+   > 'mysql'과 'mariadb' 아무거나 호출해도 됨
    <pre><code>$ mysql --version</code></pre>
+   <pre><code>$ mariadb --version</code></pre>
 
 ## PHP 설치
 
