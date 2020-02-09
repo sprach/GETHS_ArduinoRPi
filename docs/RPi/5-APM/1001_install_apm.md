@@ -41,7 +41,7 @@
 
 4. 동작 확인
    1. MariaDB 연결
-      <pre><code>$ mariadb -u root</code></pre>
+      <pre><code>$ sudo mariadb -u root</code></pre>
 
    2. 데이터베이스 목록 보기
       <pre><code><i>MariaDB [(none)]></i> show databases;</code></pre>
@@ -51,9 +51,10 @@
 
 5. 'root' 암호 설정
    1. MariaDB 연결
-      <pre><code>$ mariadb -u root</code></pre>
+      <pre><code>$ sudo mariadb -u root</code></pre>
 
-   2. 기존 'root' 삭제하고 새 'root' 추가
+   2. 기존 'root' 삭제하고 새 'root' 계정과 암호 추가
+      > 'root' 암호는 암호 복잡도에 따라 정의 필요
       <pre><code><i>MariaDB [(none)]></i> DROP USER 'root'@'localhost';
       <i>MariaDB [(none)]></i> CREATE USER 'root'@'localhost' IDENTIFIED BY 'P@ssw0rd';
       <i>MariaDB [(none)]></i> GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;</code></pre>
@@ -117,4 +118,4 @@
 3. phpmyadmin 테스트
    1. PC에서 웹 브라우저를 실행한다.
    2. 주소 칸에 '&lt;라즈베리파이 IP 주소&gt;/phpmyadmin'를 입력한다.
-   3. 'Username'에는 'administrator'를, 'Password'에는 앞서 지정한 암호를 입력한다.
+   3. 'Username'에는 'root'를, 'Password'에는 앞서 추가한 암호를 입력한다.
