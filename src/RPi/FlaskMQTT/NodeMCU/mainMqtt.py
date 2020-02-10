@@ -11,7 +11,7 @@ mqttc.loop_start()
 
 # 'name'과 'state'로 LED Dictionary 정의
 led = {'name' : 'LED pin', 'state' : 'ON'}
-  
+
 # 웹서버의 URL 주소로 접근하면 아래의 main() 함수를 실행
 @app.route("/")
 def main():
