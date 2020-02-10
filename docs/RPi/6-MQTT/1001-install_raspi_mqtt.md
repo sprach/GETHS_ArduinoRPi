@@ -35,3 +35,5 @@
         Client mosqpub|1728-raspberryp received CONNACK (0)
         Client mosqpub|1728-raspberryp sending PUBLISH (d0, q0, r0, m1, 'testTopic', ... (22 bytes))
         Client mosqpub|1728-raspberryp sending DISCONNECT</i></code></pre>
+
+     2. 터미널 #2 종료 (&lt;CTRL&gt; + &lt;C&gt; 키) 
