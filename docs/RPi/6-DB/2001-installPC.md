@@ -15,18 +15,24 @@
 5. MariaDB 설치
    1. 설치 첫 화면
       ![MariaDB 설치](../../images/pc/mariadb-install.jpg)
+
    2. 라이센스 동의
       ![MariaDB 라이센스 동의](../../images/pc/mariadb-install-1.jpg)
+
    3. 사용자 설정
       ![MariaDB 사용자 설정](../../images/pc/mariadb-install-2.jpg)
+
    4. 'root' 암호 (예시에는 'P@ssw0rd')
       ![MariaDB root 암호](../../images/pc/mariadb-install-3.jpg)
+
    5. 서비스 정의
       ![MariaDB 서비스 정의](../../images/pc/mariadb-install-4.jpg)
+
    6. 사용정보 전송 여부 선택
       ![MariaDB 사용정보 전송 선택](../../images/pc/mariadb-install-5.jpg)
       ![MariaDB 설치 준비](../../images/pc/mariadb-install-6.jpg)
       ![MariaDB 설치 진행](../../images/pc/mariadb-install-7.jpg)
+      
    7. 설치 완료
       ![MariaDB 설치 완료](../../images/pc/mariadb-install-8.jpg)
 
