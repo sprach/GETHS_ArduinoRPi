@@ -1,5 +1,6 @@
 # PC용 MariaDB 설치
 
+## MariaDB 설치
 1. 다운로드: https://mariadb.com/
 
 2. 우측의 '다운로드' 버튼 클릭
@@ -28,3 +29,6 @@
       ![MariaDB 설치 진행](../../images/PC/mariadb-install-7.jpg)
    7. 설치 완료
       ![MariaDB 설치 완료](../../images/PC/mariadb-install-8.jpg)
+
+## MariaDB 실행
+* [메뉴] > [MariaDB 10.4 (x64)] > 'MySQL Client (MariaDB 10.4 (x64))'를 선택하여 실행
