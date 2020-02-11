@@ -9,8 +9,8 @@ myuserid = "sprach"
 
 # 데이터베이스 접속 함수
 def get_connection():
-    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='P@ssw0rd'
-                           , db='guestbook_db', charset='utf8')
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='usermqtt', password='a!23456789'
+                           , db='raspi_mqtt_db', charset='utf8')
     return conn
 
 
@@ -53,7 +53,7 @@ def action(action):
 
    # 저장 (mysql 에서는 정수형이더라도 %s 로 해 주어야 한다.)
    # 다른 상용 DB는 문제가 없음
-   // 컬럼 순서: mqtt_dt, mqtt_owner, msg_typ, mqtt_msg
+   # 컬럼 순서: mqtt_dt, mqtt_owner, msg_typ, mqtt_msg
    query = "insert into tbl_mqtt_log values (now(), %s, %s, %s);"
    conn = get_connection()
    cursor = conn.cursor()
