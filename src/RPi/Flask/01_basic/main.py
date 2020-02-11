@@ -1,7 +1,7 @@
 #-*-coding:utf-8-*-
 
-from flask import Flask, render_template, request   #Flask 패키지 불러오기
-app = Flask(__name__)                               #Flask 모듈 불러오기
+from flask import Flask             #Flask 패키지 불러오기
+app = Flask(__name__)               #Flask 모듈 불러오기
 
 # Flask 객체를 생성한다.
 app = Flask(__name__)

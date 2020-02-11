@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>결과 보기</title>
+</head>
+<body>
+    <a href="/">메인으로 가기</a>
+    <hr/>
+    {% for obj in result %}
+    <h3>작성자 : {{obj[0]}}</h3>
+    <h3>내  용 : {{obj[1]}}</h3>
+    {% endfor %}
+</body>
+</html>

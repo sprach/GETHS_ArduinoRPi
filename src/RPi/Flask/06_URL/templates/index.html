@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Variables</title>
+</head>
+<body>
+    <a href="/test1">test1 요청</a><br/>
+    <a href="/test1/sub1">test1 sub1 요청</a><br/>
+    <a href="/test1/sub2">test1 sub2 요청</a><br/>
+    <hr/>
+    <a href="/test2">test2 요청</a><br/>
+    <a href="/test2/100">test2/100</a><br/>
+    <a href="/test2/200">test2/200</a><br/>
+    <a href="/test2/100/1000">test2/100/1000</a><br/>
+    <a href="/test2/200/2000">test2/200/2000</a><br/>
+    <hr/>
+    <a href="/test3">test3 요청</a><br/>
+    <a href="/test4">test4 요청</a><br/>
+    <hr/>
+    {#
+        http://주소/board?board_idx=1&page=2
+        -> http://주소/board/1/2  (앞은 board_idx, 뒤는 페이지)
+     #}
+    <a href="/test5">test5 요청</a><br/>
+    <a href="/test5/100">test5/100</a><br/>
+    <a href="/test5/200">test5/200</a><br/>
+    <a href="/test5/100/1000">test5/100/1000</a><br/>
+    <a href="/test5/200/2000">test5/200/2000</a><br/>
+</body>
+</html>

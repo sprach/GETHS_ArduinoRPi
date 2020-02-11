@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Parameters</h1>
+
+    <!-- GET -->
+    <a href="result1?a1=100&a2=200&a3=300&a6=600">get</a>
+    <hr/>
+
+    <!-- POST -->
+    <form action="result2" method="post">
+        <input type="text" name="a1"/><br/>
+        <input type="text" name="a2"/><br/>
+        <button type="submit">post</button>
+    </form>
+    <hr/>
+
+    <!-- GET/POST -->
+    <a href="result3?a1=110&a2=220&a4=440">get</a>
+    <hr/>
+    <form action="result3" method="post">
+        <input type="text" name="a1"/><br/>
+        <input type="text" name="a2"/><br/>
+        <input type="text" name="a4"/><br/>
+        <button type="submit">post</button>
+    </form>
+</body>
+</html>
