@@ -12,7 +12,7 @@
 
 2. 소스 작성
    <pre><code>$ cd ~/webapp_mqtt</code></pre>
-   [소스 보기: mainMqtt.py](../../../src/Rpi/FlaskMQTT/NodeMCU/mainMqtt.py)
+   [소스 보기: mainMqtt.py](../../../src/Rpi/FlaskMQTT/NodeMCU/mainMqtt.py)<br/>
    [소스 보기: templates/mainMqtt.html](../../../src/Rpi/FlaskMQTT/NodeMCU/templates/mainMqtt.html)
 
 3. 실행
