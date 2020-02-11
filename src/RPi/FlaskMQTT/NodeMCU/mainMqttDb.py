@@ -1,7 +1,12 @@
 #-*-coding:utf-8-*-
 
 import paho.mqtt.client as mqtt                     #Paho-MQTT 패키지 불러오기
-from flask import Flask, render_template, request   #Flask 패키지 불러오기 
+from flask import Flask, render_template, request   #Flask 패키지 불러오기
+# pymysql 다운로드
+# 시작 - Anaconda Prompt
+# pip install pymysql
+import pymysql
+
 app = Flask(__name__)                               #Flask 모듈 불러오기
 
 myuserid = "sprach"
@@ -51,13 +56,16 @@ def action(action):
       'led' : led
    }
 
+   client_ip = request.environ['REMOTE_ADDR'];
+
    # 저장 (mysql 에서는 정수형이더라도 %s 로 해 주어야 한다.)
    # 다른 상용 DB는 문제가 없음
    # 컬럼 순서: mqtt_dt, mqtt_owner, msg_typ, mqtt_msg
    query = "insert into tbl_mqtt_log values (now(), %s, %s, %s);"
    conn = get_connection()
    cursor = conn.cursor()
-   cursor.execute(query, (myuserid, 'L', led['state']))
+   #cursor.execute(query, (myuserid, 'L', led['state']))
+   cursor.execute(query, (client_ip, 'L', led['state']))
    conn.commit()
    conn.close()
 

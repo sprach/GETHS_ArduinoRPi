@@ -12,7 +12,7 @@
    > 아래부터는 프롬프트(MariaDB [(raspi_mqtt_db)]>) 표시는 제외
    <pre><code>create table if not exists tbl_mqtt_log (
         mqtt_dt      datetime       not null,
-        mqtt_owner   varchar(10)    not null,
+        mqtt_owner   varchar(30)    not null,
         msg_typ      char(1)        not null,  -- 'M': message, 'L':led
         mqtt_msg     varchar(100)   not null
    );</code></pre>
