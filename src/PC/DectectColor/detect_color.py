@@ -1,4 +1,7 @@
 # https://pysource.com/2019/02/15/detecting-colors-hsv-color-space-opencv-with-python/
+# 실행 방법
+# - 1. 아나콘다 설치
+# - 2. command 상에서 'python detect_color.py'
 # HSV
 # - hue: 색조
 # - saturation: 채도
