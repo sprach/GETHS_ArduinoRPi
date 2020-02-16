@@ -5,8 +5,8 @@
 #include <Wire.h>
 #include "Adafruit_TCS34725.h"
 #include <Servo.h>
-#include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
+#include "CheckPinStatus.h"
 
 LiquidCrystal_I2C lcd(0x27,20,4);    //주소번지 0x27
 //LiquidCrystal_I2C lcd(0x3F,20,4);  //주소번지 0x3F
@@ -49,8 +49,13 @@ int _motorDirection = 0;            // 0:순방향, 1:역방향
 int _motorStatus = 1;               // 0:정지, 1:모터 순방향, 2:모터 역방향 
 int _prevMotorStatus = 0;
 
+void callback_ir_sensor(int pinNo);
+
 // 컬러 센서
 Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_50MS, TCS34725_GAIN_1X);
+
+// IR 센서 콜백 정의
+CheckPinStatus _chkIrSensor = CheckPinStatus(PIN_IR_SENSOR, callback_ir_sensor, HIGH);
 
 //--------------------------------------------------------------[ setup() ]
 void setup() {
@@ -71,9 +76,6 @@ void setup() {
     // 버튼 스위치 인터럽트 정의
     attachInterrupt(digitalPinToInterrupt(PIN_SW), interrupted_sw, RISING);
 
-    // IR 센서 인터럽트 정의
-    attachInterrupt(digitalPinToInterrupt(PIN_IR_SENSOR), interrupted_ir_sensor, RISING);
-
     // initialize the lcd 
     lcd.init();
 
@@ -86,10 +88,15 @@ void setup() {
 
     // 컨베이어가 구동중이 아니므로 RED LED를 켠다.
     turnOnSingleLed(PIN_RED_LED);
+
+    //
+    Serial.println("Ready.");
 }
 
 //---------------------------------------------------------------[ loop() ]
 void loop() {
+    _chkIrSensor.CheckPin();     // IR Sensor 감지 검사
+    
     if (_isDetectedChip)         // 물체가 감지되어 있다.
     {   
         if (_isNewDetectedChip)  // 새 물체 감지
@@ -99,6 +106,8 @@ void loop() {
             turnOnSingleLed(PIN_GREEN_LED);
             // 모터를 구동한다.
             setSpeedMotorA(_motorDirection, MOTOR_DRIVING_SPEED);
+            //
+            Serial.println("A new chip is detected.");
         }
 
         if (_prevMotorStatus != _motorStatus)   // 모터 상태가 바뀌었다.
@@ -168,9 +177,9 @@ void interrupted_sw()
     if (_motorStatus > 2) _motorStatus = 0;
 }
 
-//----------------------------------------------[ interrupted_ir_sensor() ]
-// IR 센서 인터럽트
-void interrupted_ir_sensor()
+//-------------------------------------------------[ callback_ir_sensor() ]
+// IR 센서 콜백
+void callback_ir_sensor(int pinNo)
 {
     _isDetectedChip = true;          // 물체 감지 플래그 설정
     _isNewDetectedChip = true;       // 새로운 물체 감지 설정

@@ -10,8 +10,8 @@
 #include <Wire.h>
 #include "Adafruit_TCS34725.h"
 #include <Servo.h>
-#include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
+#include "CheckPinStatus.h"
 
 LiquidCrystal_I2C lcd(0x27,20,4);    //주소번지 0x27
 //LiquidCrystal_I2C lcd(0x3F,20,4);  //주소번지 0x3F
@@ -58,8 +58,13 @@ boolean _isNewDetectedChip = false;
 // 컬러 센싱 상태 (0: 센싱 상태 아님, 1:센싱 필요함 또는 센싱 진행중)
 uint8_t _color_sensing_status = 0;
 
+void callback_ir_sensor(int pinNo);
+
 // 컬러 센서
 Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_50MS, TCS34725_GAIN_1X);
+
+// IR 센서 콜백 정의
+CheckPinStatus _chkIrSensor = CheckPinStatus(PIN_IR_SENSOR, callback_ir_sensor, HIGH);
 
 //--------------------------------------------------------------[ setup() ]
 void setup() {
@@ -85,9 +90,6 @@ void setup() {
     // 버튼 스위치 인터럽트 정의
     attachInterrupt(digitalPinToInterrupt(PIN_SW), interrupted_sw, RISING);
 
-    // IR 센서 인터럽트 정의
-    attachInterrupt(digitalPinToInterrupt(PIN_IR_SENSOR), interrupted_ir_sensor, RISING);
-
     // initialize the lcd 
     lcd.init();
 
@@ -106,10 +108,15 @@ void setup() {
 
     // 모터를 정지한다.
     setSpeedMotorA(0);
+
+    //
+    Serial.println("Ready.");
 }
 
 //---------------------------------------------------------------[ loop() ]
 void loop() {
+    _chkIrSensor.CheckPin();     // IR Sensor 감지 검사
+
     if (_isDetectedChip)         // 물체가 감지되어 있다.
     {
         procDetectedNewChip();
@@ -219,6 +226,8 @@ void procDetectedNewChip()
         setSpeedMotorA(MOTOR_DRIVING_SPEED);
         // 서보 모터로 암을 가림
         _myservo.write(SERVO_CLOSING_ANGLE);
+        //
+        Serial.println("A new chip is detected.");
     }
 }
 
@@ -285,9 +294,9 @@ void interrupted_sw()
   _myservo.write(SERVO_CLOSING_ANGLE);  //서보모터 가림
 }
 
-//----------------------------------------------[ interrupted_ir_sensor() ]
-// IR 센서 인터럽트
-void interrupted_ir_sensor()
+//-------------------------------------------------[ callback_ir_sensor() ]
+// IR 센서 콜백
+void callback_ir_sensor(int pinNo)
 {
     _isDetectedChip = true;         // 물체 감지 플래그 설정
     _isNewDetectedChip = true;      // 새로운 물체 감지 설정
