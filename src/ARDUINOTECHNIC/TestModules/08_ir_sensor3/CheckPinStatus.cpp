@@ -3,7 +3,7 @@
  * 작성일: 2020. 02. 16. (Sun)
  * 
  * 할당한 핀이 지정한 상태가 되면 지정한 콜백 함수를 호출한다.
- * - 조건: 콜백 함수는 인수 및 리턴 값이 없다.
+ * - 조건: 콜백 함수는 리턴 값이 없다.
  * 
  * ARDUINO UNO는 인터럽트를 지원하는 핀은 2, 3번 핀만 지원한다.
  * - ex) attachInterrupt(digitalPinToInterrupt(PIN_SW), interrupted_sw, HIGH);
