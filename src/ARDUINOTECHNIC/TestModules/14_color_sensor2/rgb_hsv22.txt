@@ -1,0 +1,80 @@
+Light on (평균)
+
+normal
+Color Temp: 5031 K - Lux: 102 - C: 549 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5031 K - Lux: 102 - C: 548 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5031 K - Lux: 102 - C: 547 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5031 K - Lux: 101 - C: 547 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5052 K - Lux: 101 - C: 547 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5052 K - Lux: 101 - C: 546 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5052 K - Lux: 101 - C: 545 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5030 K - Lux: 102 - C: 545 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5030 K - Lux: 102 - C: 544 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5030 K - Lux: 102 - C: 545 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5030 K - Lux: 102 - C: 544 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5051 K - Lux: 101 - C: 544 [HSV] H: 0.17 S: 0.06 V: 0.06 
+Color Temp: 5051 K - Lux: 102 - C: 544 [HSV] H: 0.17 S: 0.06 V: 0.06 
+
+Green
+Color Temp: 3965 K - Lux: 58 - C: 124 [HSV] H: 0.28 S: 0.55 V: 0.09 
+Color Temp: 3897 K - Lux: 60 - C: 127 [HSV] H: 0.27 S: 0.59 V: 0.09 
+Color Temp: 3931 K - Lux: 61 - C: 130 [HSV] H: 0.26 S: 0.55 V: 0.09 
+Color Temp: 3862 K - Lux: 54 - C: 120 [HSV] H: 0.26 S: 0.55 V: 0.09 
+Color Temp: 3894 K - Lux: 50 - C: 114 [HSV] H: 0.26 S: 0.52 V: 0.08 
+Color Temp: 3894 K - Lux: 52 - C: 114 [HSV] H: 0.26 S: 0.55 V: 0.09 
+Color Temp: 3931 K - Lux: 45 - C: 106 [HSV] H: 0.26 S: 0.52 V: 0.08 
+Color Temp: 4018 K - Lux: 35 - C: 92 [HSV] H: 0.25 S: 0.50 V: 0.08 
+Color Temp: 4018 K - Lux: 34 - C: 90 [HSV] H: 0.24 S: 0.45 V: 0.08 
+Color Temp: 3971 K - Lux: 40 - C: 99 [HSV] H: 0.26 S: 0.52 V: 0.08 
+Color Temp: 3891 K - Lux: 43 - C: 102 [HSV] H: 0.26 S: 0.52 V: 0.08 
+Color Temp: 3891 K - Lux: 45 - C: 103 [HSV] H: 0.26 S: 0.52 V: 0.08 
+Color Temp: 3971 K - Lux: 40 - C: 98 [HSV] H: 0.26 S: 0.52 V: 0.08 
+Color Temp: 3971 K - Lux: 40 - C: 99 [HSV] H: 0.26 S: 0.52 V: 0.08 
+
+Red
+Color Temp: 2065 K - Lux: 65514 - C: 243 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2070 K - Lux: 65511 - C: 255 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2069 K - Lux: 65510 - C: 263 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2048 K - Lux: 65510 - C: 270 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2045 K - Lux: 65511 - C: 265 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2070 K - Lux: 65513 - C: 256 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2083 K - Lux: 65515 - C: 263 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2085 K - Lux: 65512 - C: 267 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2065 K - Lux: 65512 - C: 267 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2069 K - Lux: 65513 - C: 265 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2062 K - Lux: 65512 - C: 268 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2051 K - Lux: 65509 - C: 279 [HSV] H: 0.01 S: 0.83 V: 0.14 
+Color Temp: 2054 K - Lux: 65510 - C: 278 [HSV] H: 0.01 S: 0.83 V: 0.14 
+
+Yellow
+Color Temp: 2490 K - Lux: 53 - C: 201 [HSV] H: 0.09 S: 0.75 V: 0.09 
+Color Temp: 2599 K - Lux: 44 - C: 173 [HSV] H: 0.09 S: 0.70 V: 0.09 
+Color Temp: 3331 K - Lux: 57 - C: 258 [HSV] H: 0.10 S: 0.50 V: 0.08 
+Color Temp: 3805 K - Lux: 77 - C: 364 [HSV] H: 0.10 S: 0.37 V: 0.07 
+Color Temp: 3782 K - Lux: 78 - C: 370 [HSV] H: 0.10 S: 0.37 V: 0.07 
+Color Temp: 4231 K - Lux: 122 - C: 598 [HSV] H: 0.10 S: 0.28 V: 0.07 
+Color Temp: 4169 K - Lux: 126 - C: 618 [HSV] H: 0.10 S: 0.28 V: 0.07 
+Color Temp: 4157 K - Lux: 128 - C: 619 [HSV] H: 0.10 S: 0.28 V: 0.07 
+Color Temp: 4105 K - Lux: 129 - C: 622 [HSV] H: 0.10 S: 0.28 V: 0.07 
+Color Temp: 3724 K - Lux: 109 - C: 479 [HSV] H: 0.12 S: 0.37 V: 0.07 
+Color Temp: 3198 K - Lux: 106 - C: 430 [HSV] H: 0.11 S: 0.55 V: 0.08 
+Color Temp: 3078 K - Lux: 78 - C: 319 [HSV] H: 0.10 S: 0.57 V: 0.08 
+
+Blue
+Color Temp: 5933 K - Lux: 8 - C: 84 [HSV] H: 0.71 S: 0.22 V: 0.07 
+Color Temp: 5963 K - Lux: 7 - C: 82 [HSV] H: 0.71 S: 0.22 V: 0.07 
+Color Temp: 5658 K - Lux: 9 - C: 80 [HSV] H: 0.67 S: 0.12 V: 0.07 
+Color Temp: 5505 K - Lux: 8 - C: 78 [HSV] H: 0.78 S: 0.18 V: 0.07 
+Color Temp: 6188 K - Lux: 7 - C: 89 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6425 K - Lux: 6 - C: 95 [HSV] H: 0.67 S: 0.26 V: 0.07 
+Color Temp: 6252 K - Lux: 6 - C: 95 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6383 K - Lux: 5 - C: 96 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6252 K - Lux: 6 - C: 96 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6252 K - Lux: 6 - C: 95 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6289 K - Lux: 7 - C: 93 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6425 K - Lux: 6 - C: 94 [HSV] H: 0.67 S: 0.26 V: 0.07 
+Color Temp: 6289 K - Lux: 7 - C: 93 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6329 K - Lux: 6 - C: 90 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6289 K - Lux: 7 - C: 93 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6289 K - Lux: 7 - C: 92 [HSV] H: 0.70 S: 0.26 V: 0.07 
+Color Temp: 6289 K - Lux: 7 - C: 93 [HSV] H: 0.70 S: 0.26 V: 0.07 
