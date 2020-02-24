@@ -1,5 +1,5 @@
 # 개발 도구
-  ## Python 개발 관련 파일 설치
+## Python 개발 관련 파일 설치
   0. Python 2.7 제거 (Optional)
      * (판단 필요) Python 3.x 만을 사용할 경우 Python 2.7 제거
        <pre><code>$ sudo apt-get remove -y python2.7
@@ -11,15 +11,15 @@
   2. Python files
      <pre><code>$ sudo apt-get install -y python3-dev python3-distlib python3-setuptools python3-pip python3-wheel python3-pillow python3-virtualenv python3-numpy python3-picamera python3-pandas python3-h5py python3-lxml python3-rpi.gpio</code></pre>
 
-  ## Dependency Files
+## Dependency Files
   <pre><code>$ sudo apt-get install -y build-essential i2c-tools avahi-utils joystick libopenjp2-7-dev libtiff5-dev gfortran libatlas-base-dev libopenblas-dev libhdf5-dev
-  $ sudo apt-get install -y libxvidcore-dev libx264-dev
-  $ sudo apt-get install -y libzmq-dev xsel xclip libxslt-dev</code></pre>
+$ sudo apt-get install -y libxvidcore-dev libx264-dev
+$ sudo apt-get install -y libzmq-dev xsel xclip libxslt-dev</code></pre>
 
-  ## OpenCV files
+## OpenCV files
   <pre><code>$ sudo apt-get install -y libilmbase-dev libopenexr-dev libgstreamer1.0-dev libjasper-dev libwebp-dev libatlas-base-dev libavcodec-dev libavformat-dev libswscale-dev libqtgui4 libjpeg-dev libpng12-dev libv4l-dev libqt4-test</code></pre>
 
-  ## VirtualEnv
+## VirtualEnv
   * Requires Pytho &gt; 3.4 and pip &gt;= 19.0
   1. Check VirtualEnv
      <pre><code>$ python3 --version
@@ -45,7 +45,7 @@
        <pre><code>(venv) $ deactivate  # don't exit until you're done using TensorFlow
        $ ■</code></pre>
 
-  ## TensorFlow
+## TensorFlow
   > Tensorflow 설치는 VirtualEnv를 기본으로 하되, 실습에서는 시스템 설치와 가상 설치는 별도로 구분하지 않는다.
   1. Install tensorflow
      * Virtualenv install
@@ -113,7 +113,7 @@
     * TensorFlow 학습: https://www.tensorflow.org/
 
 
-  ## Samba
+## Samba
   * 라즈베리파이에서의 작업
     * 가상환경인 경우 빠져 나오기
       <pre><code>(venv) $ deactivate
